@@ -1,0 +1,10 @@
+{
+  "name": "berlin-city-rp",
+  "version": "1.0.0",
+  "description": "Berlin City RP Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}

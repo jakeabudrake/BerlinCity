@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitungsbereich | Berlin City RP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="portal-page">
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="brand-mark">BC</span>
+        <span>Berlin City RP</span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="index.html">Start</a>
+        <a href="team.html">Team</a>
+        <a href="https://discord.gg/JE3pd3srNB" target="_blank" rel="noopener">Discord</a>
+    </nav>
+</header>
+
+<main class="portal-shell">
+    <section class="login-panel" id="adminLoginPanel">
+        <div>
+            <p class="eyebrow">Leitungsbereich</p>
+            <h1>Zugang nur für die Leitung.</h1>
+            <p>Hier verwaltest du Team-Zugänge, aktive Nutzer und das Logsystem.</p>
+        </div>
+
+        <form class="auth-form" id="adminLoginForm">
+            <label>
+                Username
+                <input type="text" id="adminUsername" autocomplete="username" placeholder="Username" required>
+            </label>
+
+            <label>
+                Passwort
+                <input type="password" id="adminPassword" autocomplete="current-password" placeholder="Passwort" required>
+            </label>
+
+            <button class="btn" type="submit">Leitung öffnen</button>
+            <p class="form-message" id="adminLoginMessage" role="status"></p>
+        </form>
+    </section>
+
+    <section class="dashboard hidden" id="adminDashboard">
+        <div class="dashboard-top">
+            <div>
+                <p class="eyebrow">Leitung</p>
+                <h1>Kontrollzentrum</h1>
+                <p>Accounts erstellen, Zugänge entfernen, aktive Nutzer sehen und Discord-Rollen automatisch anzeigen.</p>
+            </div>
+            <button class="btn ghost" type="button" id="adminLogoutBtn">Abmelden</button>
+        </div>
+
+        <div class="stats-grid">
+            <article class="stat-card">
+                <span>Team-Zugänge</span>
+                <strong id="accountCount">0</strong>
+            </article>
+            <article class="stat-card">
+                <span>Aktive Nutzer</span>
+                <strong id="activeCount">0</strong>
+            </article>
+            <article class="stat-card">
+                <span>Logs</span>
+                <strong id="logCount">0</strong>
+            </article>
+        </div>
+
+        <div class="admin-layout">
+            <section class="panel-block">
+                <div class="panel-heading">
+                    <div>
+                        <p class="eyebrow">Team-Bereich Eingang</p>
+                        <h2>Team-Zugang erstellen</h2>
+                    </div>
+                </div>
+
+                <form class="auth-form compact" id="createAccountForm">
+                    <label>
+                        Username
+                        <input type="text" id="newTeamUsername" placeholder="z. B. Max" required>
+                    </label>
+
+                    <label>
+                        Passwort
+                        <input type="text" id="newTeamPassword" placeholder="Passwort erstellen" required>
+                    </label>
+
+                    <label>
+                        Discord User ID
+                        <input type="text" id="newDiscordUserId" placeholder="z. B. 1334557397456392343" required>
+                    </label>
+
+                    <button class="btn" type="submit">Zugang speichern</button>
+                    <p class="form-message" id="createAccountMessage" role="status"></p>
+                </form>
+            </section>
+
+            <section class="panel-block">
+                <div class="panel-heading">
+                    <div>
+                        <p class="eyebrow">Management</p>
+                        <h2>Team-Zugänge</h2>
+                    </div>
+                </div>
+                <div class="table-list" id="accountList"></div>
+            </section>
+        </div>
+
+        <div class="admin-layout">
+            <section class="panel-block">
+                <div class="panel-heading">
+                    <div>
+                        <p class="eyebrow">Live</p>
+                        <h2>Aktive Team-Nutzer</h2>
+                    </div>
+                    <button class="small-btn" type="button" id="refreshActiveBtn">Aktualisieren</button>
+                </div>
+                <div class="table-list" id="activeList"></div>
+            </section>
+
+            <section class="panel-block">
+                <div class="panel-heading">
+                    <div>
+                        <p class="eyebrow">Logsystem</p>
+                        <h2>Letzte Aktionen</h2>
+                    </div>
+                </div>
+                <div class="log-list" id="logList"></div>
+            </section>
+        </div>
+    </section>
+</main>
+
+<script src="auth.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

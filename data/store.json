@@ -1,0 +1,743 @@
+{
+  "accounts": [],
+  "teamSessions": [
+    {
+      "token": "team_key_1784847097331_c7d079b128",
+      "accessType": "key",
+      "username": "Schlüsselzugang",
+      "discordUserId": "1334557397456392343",
+      "startedAt": "2026-07-23T22:51:37.334Z",
+      "lastSeenAt": "2026-07-23T22:51:37.335Z"
+    },
+    {
+      "token": "team_key_1784847123492_f66fcc336b",
+      "accessType": "key",
+      "username": "Schlüsselzugang",
+      "discordUserId": "1334557397456392343",
+      "startedAt": "2026-07-23T22:52:03.492Z",
+      "lastSeenAt": "2026-07-23T22:52:03.493Z"
+    },
+    {
+      "token": "team_key_1784847183769_f04b0ed1d5",
+      "accessType": "key",
+      "username": "Schlüsselzugang",
+      "discordUserId": "1334557397456392343",
+      "startedAt": "2026-07-23T22:53:03.770Z",
+      "lastSeenAt": "2026-07-23T22:53:03.770Z"
+    },
+    {
+      "token": "team_key_1784850050668_1d33b4721e",
+      "accessType": "key",
+      "username": "Schlüsselzugang",
+      "discordUserId": "1334557397456392343",
+      "startedAt": "2026-07-23T23:40:50.670Z",
+      "lastSeenAt": "2026-07-23T23:40:50.688Z"
+    }
+  ],
+  "adminSessions": [],
+  "logs": [
+    {
+      "id": "log_1784850050688_a5d4d9a1cd",
+      "type": "Team",
+      "message": "Team-Verwaltung mit Schlüsselzugang geöffnet.",
+      "actor": "Schlüsselzugang",
+      "at": "2026-07-23T23:40:50.688Z"
+    },
+    {
+      "id": "log_1784847183770_e4a659a3f9",
+      "type": "Team",
+      "message": "Team-Verwaltung mit Schlüsselzugang geöffnet.",
+      "actor": "Schlüsselzugang",
+      "at": "2026-07-23T22:53:03.770Z"
+    },
+    {
+      "id": "log_1784847123493_ab13682f65",
+      "type": "Team",
+      "message": "Team-Verwaltung mit Schlüsselzugang geöffnet.",
+      "actor": "Schlüsselzugang",
+      "at": "2026-07-23T22:52:03.493Z"
+    },
+    {
+      "id": "log_1784847097335_691ff54099",
+      "type": "Team",
+      "message": "Team-Verwaltung mit Schlüsselzugang geöffnet.",
+      "actor": "Schlüsselzugang",
+      "at": "2026-07-23T22:51:37.335Z"
+    },
+    {
+      "id": "log_1784796299893_8962126c11",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 13 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:44:59.893Z"
+    },
+    {
+      "id": "log_1784796269201_787ca85bd5",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:44:29.201Z"
+    },
+    {
+      "id": "log_1784796268798_de3cb81794",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:44:28.798Z"
+    },
+    {
+      "id": "log_1784796268551_def1d6d03a",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 2 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:44:28.551Z"
+    },
+    {
+      "id": "log_1784796268221_2a7afa2987",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:44:28.221Z"
+    },
+    {
+      "id": "log_1784796267890_e04dfc65cf",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 2 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:44:27.890Z"
+    },
+    {
+      "id": "log_1784796257652_2ee0b19b98",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 18 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:44:17.652Z"
+    },
+    {
+      "id": "log_1784796165571_33639b8567",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 16 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:42:45.571Z"
+    },
+    {
+      "id": "log_1784796151385_017623de7e",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 5 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:42:31.385Z"
+    },
+    {
+      "id": "log_1784796143411_4a5434d5d8",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 13 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:42:23.411Z"
+    },
+    {
+      "id": "log_1784796124713_4fd85c865a",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 41 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:42:04.713Z"
+    },
+    {
+      "id": "log_1784796110710_cc85227615",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:41:50.710Z"
+    },
+    {
+      "id": "log_1784796109897_39966802f7",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:41:49.897Z"
+    },
+    {
+      "id": "log_1784796109398_e01979a7cc",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:41:49.398Z"
+    },
+    {
+      "id": "log_1784796108771_fcb64f836e",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:41:48.771Z"
+    },
+    {
+      "id": "log_1784796107829_5af6adb72e",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:41:47.829Z"
+    },
+    {
+      "id": "log_1784796107036_025e14dddd",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:41:47.036Z"
+    },
+    {
+      "id": "log_1784796106752_8a9c949cc1",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:41:46.752Z"
+    },
+    {
+      "id": "log_1784796106100_37ddac3029",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:41:46.100Z"
+    },
+    {
+      "id": "log_1784796105738_b0d829708b",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:41:45.738Z"
+    },
+    {
+      "id": "log_1784796104857_6cd28cc751",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:41:44.857Z"
+    },
+    {
+      "id": "log_1784796104388_c16c73bb7e",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:41:44.388Z"
+    },
+    {
+      "id": "log_1784796103876_4447cb5e5b",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:41:43.876Z"
+    },
+    {
+      "id": "log_1784796103376_9c295d2f69",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:41:43.376Z"
+    },
+    {
+      "id": "log_1784796100619_eb487d9600",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:41:40.619Z"
+    },
+    {
+      "id": "log_1784796099583_16641ec7fd",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:41:39.583Z"
+    },
+    {
+      "id": "log_1784796082208_fa7868eb72",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:41:22.208Z"
+    },
+    {
+      "id": "log_1784796057394_293f00f8a3",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:40:57.394Z"
+    },
+    {
+      "id": "log_1784796007437_a8dcaaf853",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:40:07.437Z"
+    },
+    {
+      "id": "log_1784795993949_a09cd5f719",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:39:53.949Z"
+    },
+    {
+      "id": "log_1784795987220_c57648371c",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:39:47.220Z"
+    },
+    {
+      "id": "log_1784795986036_92b42e7f2d",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:39:46.036Z"
+    },
+    {
+      "id": "log_1784795985031_2aefee5039",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:39:45.031Z"
+    },
+    {
+      "id": "log_1784795972666_76742e8e86",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:39:32.666Z"
+    },
+    {
+      "id": "log_1784795971693_05c74c30c5",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:39:31.693Z"
+    },
+    {
+      "id": "log_1784795970697_68ea7447a6",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:39:30.697Z"
+    },
+    {
+      "id": "log_1784795968482_28ac321caa",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:39:28.482Z"
+    },
+    {
+      "id": "log_1784795953270_3dfcb74e7c",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 57 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:39:13.270Z"
+    },
+    {
+      "id": "log_1784795921543_6837f2df68",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 41 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:38:41.543Z"
+    },
+    {
+      "id": "log_1784795903666_6ff5610ada",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 27 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:38:23.666Z"
+    },
+    {
+      "id": "log_1784795899356_7456ee6903",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 27 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:38:19.356Z"
+    },
+    {
+      "id": "log_1784795884517_75e981c1ee",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:38:04.517Z"
+    },
+    {
+      "id": "log_1784795882374_9b1d462f6d",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:38:02.374Z"
+    },
+    {
+      "id": "log_1784795877095_afd5e21865",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:57.095Z"
+    },
+    {
+      "id": "log_1784795876523_e3d0bb2318",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:56.523Z"
+    },
+    {
+      "id": "log_1784795874876_ef9f319453",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:54.876Z"
+    },
+    {
+      "id": "log_1784795873519_1cbce7c891",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:37:53.519Z"
+    },
+    {
+      "id": "log_1784795872549_4cdca76412",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:52.549Z"
+    },
+    {
+      "id": "log_1784795871604_c33a2fa9f2",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:51.604Z"
+    },
+    {
+      "id": "log_1784795871010_4d5e684abc",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:51.011Z"
+    },
+    {
+      "id": "log_1784795869183_d4c8da08b9",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:49.183Z"
+    },
+    {
+      "id": "log_1784795868455_4d7c61f283",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:48.455Z"
+    },
+    {
+      "id": "log_1784795867489_d3809f51aa",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:47.489Z"
+    },
+    {
+      "id": "log_1784795866484_5093d48d5d",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:37:46.484Z"
+    },
+    {
+      "id": "log_1784795866142_6dce29c2bc",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:46.142Z"
+    },
+    {
+      "id": "log_1784795865387_a1dd784399",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:45.387Z"
+    },
+    {
+      "id": "log_1784795864625_a36c26e888",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:37:44.625Z"
+    },
+    {
+      "id": "log_1784795864194_673c39ed3f",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:44.194Z"
+    },
+    {
+      "id": "log_1784795863482_8da5d4e1dc",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:37:43.482Z"
+    },
+    {
+      "id": "log_1784795863227_cbcc4e7b24",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:43.227Z"
+    },
+    {
+      "id": "log_1784795862656_9de7e81ec9",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:42.656Z"
+    },
+    {
+      "id": "log_1784795861907_fe330f0933",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:41.907Z"
+    },
+    {
+      "id": "log_1784795861266_6c698acd50",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:41.266Z"
+    },
+    {
+      "id": "log_1784795860460_26d85c3478",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:40.460Z"
+    },
+    {
+      "id": "log_1784795859400_29c3868e5b",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:39.400Z"
+    },
+    {
+      "id": "log_1784795857758_f4d4f33848",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:37.758Z"
+    },
+    {
+      "id": "log_1784795856552_e836123549",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:37:36.552Z"
+    },
+    {
+      "id": "log_1784795856116_3eb93ee2b4",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:36.116Z"
+    },
+    {
+      "id": "log_1784795855345_cdacb44bbd",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:37:35.345Z"
+    },
+    {
+      "id": "log_1784795854983_c24d5efd84",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:34.983Z"
+    },
+    {
+      "id": "log_1784795854289_837180739f",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:37:34.289Z"
+    },
+    {
+      "id": "log_1784795853529_3081b71281",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:37:33.529Z"
+    },
+    {
+      "id": "log_1784795853193_2d48f0a64e",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:37:33.193Z"
+    },
+    {
+      "id": "log_1784795852551_49fda8050f",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:37:32.551Z"
+    },
+    {
+      "id": "log_1784795852303_0aede1d629",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:37:32.303Z"
+    },
+    {
+      "id": "log_1784795851224_9c746821f7",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:31.225Z"
+    },
+    {
+      "id": "log_1784795850534_5a12fc8876",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:37:30.535Z"
+    },
+    {
+      "id": "log_1784795849476_6a856274e8",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:37:29.477Z"
+    },
+    {
+      "id": "log_1784795849091_aa5ff69034",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:29.091Z"
+    },
+    {
+      "id": "log_1784795847164_36433a02b5",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:37:27.165Z"
+    },
+    {
+      "id": "log_1784795846170_1c7542cd67",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:37:26.170Z"
+    },
+    {
+      "id": "log_1784795845700_5d93aacaa3",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:25.701Z"
+    },
+    {
+      "id": "log_1784795845072_64c4654206",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:25.072Z"
+    },
+    {
+      "id": "log_1784795843415_c8ded9440c",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 47 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:37:23.415Z"
+    },
+    {
+      "id": "log_1784795807370_43e93af83e",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 54 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:36:47.370Z"
+    },
+    {
+      "id": "log_1784795805736_cc13b8652a",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 54 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:36:45.736Z"
+    },
+    {
+      "id": "log_1784795804182_bedb9e3db9",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 54 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:36:44.182Z"
+    },
+    {
+      "id": "log_1784795541664_9413e89c05",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 54 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:32:21.664Z"
+    },
+    {
+      "id": "log_1784795537730_af75fa994d",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 54 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:32:17.730Z"
+    },
+    {
+      "id": "log_1784795536407_1b53d7c30e",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 54 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:32:16.407Z"
+    },
+    {
+      "id": "log_1784795535574_d6a8469faa",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 54 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:32:15.574Z"
+    },
+    {
+      "id": "log_1784795534754_65da6b427a",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 54 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:32:14.754Z"
+    },
+    {
+      "id": "log_1784795533654_981118ecd2",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 54 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:32:13.654Z"
+    },
+    {
+      "id": "log_1784795532594_607d1b7335",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 54 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:32:12.594Z"
+    },
+    {
+      "id": "log_1784795531375_09cd86dc2d",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 gesendet. Länge: 54 Zeichen.",
+      "actor": "Bot",
+      "at": "2026-07-23T08:32:11.375Z"
+    },
+    {
+      "id": "log_1784795530706_d8334b6201",
+      "type": "Discord",
+      "message": "Discord-Nachricht an Channel 1519790189810028805 konnte nicht gesendet werden: Nachricht konnte nicht gesendet werden.",
+      "actor": "System",
+      "at": "2026-07-23T08:32:10.706Z"
+    }
+  ],
+  "teamWarnings": [],
+  "teamPunishments": [],
+  "moderationUsage": []
+}

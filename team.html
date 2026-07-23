@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team-Bereich | Berlin City RP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="brand-mark">BC</span>
+        <span>Berlin City RP</span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#regeln">Regeln</a>
+        <a href="team.html">Team</a>
+    </nav>
+
+    <div class="profile-section" id="profileSection">
+        <button id="discordLoginBtn" class="btn-discord">Mit Discord verbinden</button>
+        <div id="userProfile" class="user-profile hidden">
+            <img id="userAvatar" src="" alt="Avatar" class="avatar">
+            <div class="profile-info">
+                <div id="userName" class="username">Benutzername</div>
+                <div id="userRole" class="user-role">Rolle</div>
+            </div>
+            <button id="profileMenuBtn" class="profile-menu-btn">⋮</button>
+            <div id="profileMenu" class="profile-menu hidden">
+                <button id="logoutBtn" class="menu-item danger">Abmelden</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="team-main">
+    <section id="loginRequired" class="section">
+        <div class="login-required-box">
+            <p class="eyebrow">Zugang erforderlich</p>
+            <h2>Team-Zugang</h2>
+            <p>Nutze dein Discord-Konto oder den Team-Schlüssel, um in den internen Bereich zu gelangen.</p>
+
+            <form id="teamAccessForm" class="auth-form compact" style="margin-top: 24px; max-width: 420px; margin-left: auto; margin-right: auto;">
+                <label>
+                    Team-Key
+                    <input type="password" id="teamAccessKey" placeholder="z. B. ahcdemri" required>
+                </label>
+                <button type="submit" class="btn">Mit Schlüssel öffnen</button>
+            </form>
+
+            <div class="divider-or">oder</div>
+            <button id="loginRequiredBtn" class="btn" style="margin-top: 12px;">Mit Discord anmelden</button>
+        </div>
+    </section>
+
+    <!-- No Server Access -->
+    <section id="noServerAccessSection" class="section hidden">
+        <div class="login-required-box">
+            <p class="eyebrow">Zugriff verweigert</p>
+            <h2>Du musst Mitglied des Discord-Servers sein</h2>
+            <p>Nur Mitglieder des Servers können den Team-Bereich betreten. Trete dem Server bei, um fortzufahren.</p>
+            <div class="modal-actions" style="margin-top: 24px;">
+                <button id="serverJoinBtn" class="btn">Server beitreten</button>
+                <button id="appealBtn" class="btn outline">Appeal Server</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Dashboard -->
+    <section id="teamDashboard" class="section hidden">
+        <div class="dashboard-header">
+            <div>
+                <p class="eyebrow">Interner Bereich</p>
+                <h1>Team-Dashboard</h1>
+                <p id="welcomeText">Willkommen im Team-Bereich von Berlin City RP!</p>
+            </div>
+        </div>
+
+        <section class="panel-block">
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">Verwaltung</p>
+                    <h2>Teammitglieder</h2>
+                </div>
+            </div>
+            <div id="teamMembersList" class="team-members-grid">
+                <div>Mitglieder werden geladen...</div>
+            </div>
+        </section>
+
+        <section class="panel-block">
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">Navigation</p>
+                    <h2>Weitere Teamseiten</h2>
+                </div>
+            </div>
+            <div class="bottom-actions" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+                <a class="info-box" href="team-regelwerk.html">Team Regelwerk</a>
+                <a class="info-box" href="team-bot.html">Bot-Funktionen</a>
+                <a class="info-box" href="team-logs.html">Logs</a>
+            </div>
+        </section>
+
+        <!-- Access Denied for Non-Team -->
+        <div id="noTeamRoleSection" class="no-access-section hidden">
+            <div class="section-divider"></div>
+            
+            <div class="section-heading" style="margin-top: 80px; text-align: center;">
+                <p class="eyebrow">Kein Zugriff</p>
+                <h2>Erweiterte Funktionen nicht verfügbar</h2>
+                <p>Du benötigst eine spezielle Rolle auf dem Discord-Server, um diese Inhalte zu sehen.</p>
+                <p style="margin-top: 24px; font-size: 14px;">
+                    Wenn du denken, dass das ein Fehler ist, kontaktiere die Leitung auf Discord.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Management Modal -->
+<div id="manageModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-panel">
+        <button id="manageCloseBtn" class="modal-close">✕</button>
+        <h3 id="manageTitle">Mitglied verwalten</h3>
+        <div id="manageInfo" class="manage-info"></div>
+
+        <label>
+            Aktion
+            <select id="manageAction">
+                <option value="warn">Warn</option>
+                <option value="down-rank">Down-Rank</option>
+                <option value="up-rank">Up-Rank</option>
+                <option value="team-kick">Team-Kick</option>
+            </select>
+        </label>
+
+        <label id="warnDurationLabel">
+            Dauer (Warn)
+            <select id="warnDuration">
+                <option value="1d">1 Tag</option>
+                <option value="3d">3 Tage</option>
+                <option value="7d">7 Tage</option>
+                <option value="14d">14 Tage</option>
+                <option value="30d">30 Tage</option>
+                <option value="60d">60 Tage</option>
+                <option value="perm">Permanent</option>
+            </select>
+        </label>
+
+        <label>
+            Begründung
+            <input id="manageReason" placeholder="Grund (optional)">
+        </label>
+
+        <div class="modal-actions">
+            <button id="manageSubmit" class="btn">Ausführen</button>
+            <button id="manageCancel" class="btn outline">Abbrechen</button>
+        </div>
+        <div id="manageResult" class="manage-result"></div>
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="team-script.js"></script>
+<script src="team-members-script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Team-Mitglied</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">BC</span><span>Berlin City RP</span></a>
+  </header>
+
+  <main class="member-page-shell">
+    <div class="page-head">
+      <a class="back-link" href="team.html">← Zurück zur Team-Übersicht</a>
+      <div class="page-headline">
+        <span class="eyebrow">Team-Verwaltung</span>
+        <h1>Einzelner Teamler verwalten</h1>
+      </div>
+    </div>
+
+    <div id="memberError" class="member-error hidden"></div>
+
+    <section id="memberDetail" class="member-detail-grid">
+      <aside class="member-summary-panel">
+        <div class="member-profile-card">
+          <div class="avatar-shell" id="profileAvatar"></div>
+          <div class="member-meta">
+            <div class="member-name" id="memberName">Lade...</div>
+            <div class="member-subtitle" id="memberSubtitle">Benutzername / Rolle</div>
+          </div>
+        </div>
+
+        <div class="member-status-card">
+          <div class="member-status-item">
+            <span>Status</span>
+            <strong id="memberRoleLabel">Rolle</strong>
+          </div>
+          <div class="member-status-item">
+            <span>Team seit</span>
+            <strong id="memberSince">N/A</strong>
+          </div>
+          <div class="member-status-item">
+            <span>Rollen-ID</span>
+            <strong id="memberRoleId">N/A</strong>
+          </div>
+        </div>
+
+        <div class="action-panel">
+          <h2>Aktionen</h2>
+          <button class="btn action-btn" id="btnUpRank">Upranken</button>
+          <button class="btn action-btn" id="btnWarn">Team Warn</button>
+          <button class="btn action-btn" id="btnDownRank">Digradieren</button>
+          <button class="btn danger action-btn" id="btnTeamKick">Team Kick</button>
+
+          <form id="actionForm" class="auth-form compact hidden action-form">
+            <h3 id="actionFormTitle">Aktion bestätigen</h3>
+            <label>
+              Grund (erforderlich)
+              <input id="actionReason" type="text" placeholder="Grund eingeben" required>
+            </label>
+            <label id="actionDurationField" class="hidden">
+              Dauer der Warnung
+              <select id="actionDuration">
+                <option value="1d">1 Tag</option>
+                <option value="3d">3 Tage</option>
+                <option value="7d">7 Tage</option>
+                <option value="14d">14 Tage</option>
+                <option value="30d">30 Tage</option>
+                <option value="60d">60 Tage</option>
+                <option value="perm">Permanent</option>
+              </select>
+            </label>
+            <div class="modal-actions">
+              <button class="btn" type="submit">Aktion ausführen</button>
+              <button class="btn outline" id="actionCancel" type="button">Abbrechen</button>
+            </div>
+          </form>
+        </div>
+      </aside>
+
+      <main class="member-details-panel">
+        <section class="panel-block member-info-block">
+          <h3>Übersicht</h3>
+          <div class="info-grid">
+            <div class="info-card"><span>Abgemeldet</span><strong id="infoOffline">N/A</strong></div>
+            <div class="info-card"><span>Abmeldungen</span><strong id="infoLogins">0</strong></div>
+            <div class="info-card"><span>Tickets</span><strong id="infoTickets">0</strong></div>
+            <div class="info-card"><span>Bewerbungen</span><strong id="infoApplications">0</strong></div>
+          </div>
+        </section>
+
+        <section class="panel-block member-log-block">
+          <h3>Letzte Aktion</h3>
+          <div id="memberActionResult" class="member-action-result">Hier erscheint das Ergebnis deiner Verwaltung.</div>
+        </section>
+      </main>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+<script src="team-member-script.js"></script>
+</body>
+</html>

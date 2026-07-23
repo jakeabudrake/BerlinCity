@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team-Regelwerk | Berlin City RP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="brand-mark">BC</span>
+        <span>Berlin City RP</span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#regeln">Regeln</a>
+        <a href="team.html">Team & Management</a>
+    </nav>
+
+    <div class="profile-section" id="profileSection">
+        <button id="discordLoginBtn" class="btn-discord">Mit Discord verbinden</button>
+        <div id="userProfile" class="user-profile hidden">
+            <img id="userAvatar" src="" alt="Avatar" class="avatar">
+            <div class="profile-info">
+                <div id="userName" class="username">Benutzername</div>
+                <div id="userRole" class="user-role">Rolle</div>
+            </div>
+            <button id="profileMenuBtn" class="profile-menu-btn">⋮</button>
+            <div id="profileMenu" class="profile-menu hidden">
+                <button id="logoutBtn" class="menu-item danger">Abmelden</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="team-main">
+    <section class="section">
+        <div class="dashboard-header">
+            <div>
+                <p class="eyebrow">Regelwerk</p>
+                <h1>Team-Regelwerk & Rangliste</h1>
+                <p id="introText">Hier findest du das offizielle Team-Regelwerk, die aktuelle Rangliste und Logs.</p>
+            </div>
+        </div>
+
+        <div class="dashboard-grid" id="topGrid">
+            <!-- Top 4 boxes removed per request -->
+        </div>
+
+        <section class="panel-block">
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">Rangliste</p>
+                    <h2>Aktuelle Rangliste</h2>
+                </div>
+            </div>
+            <div id="rankingsList" class="table-list">
+                <div>Rangliste wird geladen...</div>
+            </div>
+        </section>
+
+        <section class="panel-block">
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">Logs</p>
+                    <h2>Letzte Einträge</h2>
+                </div>
+            </div>
+            <div id="logsList" class="table-list">
+                <div>Logs werden geladen...</div>
+            </div>
+        </section>
+
+        <section class="panel-block" id="rulesBlock">
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">Teamregeln (Kurzfassung)</p>
+                    <h2>Verhaltensregeln</h2>
+                </div>
+            </div>
+            <div class="table-list">
+                <div><strong>Respekt</strong><br><small>Behandle alle Team-Mitglieder respektvoll.</small></div>
+                <div><strong>Keine Macht ausnutzen</strong><br><small>Missbrauch von Rechten führt zu Strafen.</small></div>
+                <div><strong>Keine Leaks</strong><br><small>Interne Informationen dürfen nicht geteilt werden.</small></div>
+                <div><strong>Logs nicht manipulieren</strong><br><small>Manipulation wird streng geahndet.</small></div>
+            </div>
+        </section>
+
+        <section class="panel-block">
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">Navigation</p>
+                    <h2>Weitere Teamseiten</h2>
+                </div>
+            </div>
+            <div class="bottom-actions" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                <a class="info-box" href="team.html">Team-Liste</a>
+                <a class="info-box" href="team-bot.html">Bot-Funktionen</a>
+                <a class="info-box" href="team-logs.html">Logs</a>
+            </div>
+        </section>
+    </section>
+</main>
+
+<script src="script.js"></script>
+<script src="team-regelwerk-script.js"></script>
+
+</body>
+</html>

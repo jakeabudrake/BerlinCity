@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management | Berlin City RP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="brand-mark">BC</span>
+        <span>Berlin City RP</span>
+    </a>
+    <nav class="main-nav">
+        <a href="team.html">Team</a>
+        <a href="team-management.html">Management</a>
+    </nav>
+</header>
+
+<main class="page-shell">
+    <section class="page-hero">
+        <p class="eyebrow">Management</p>
+        <h1>Zentrale Verwaltungsoberfläche</h1>
+        <p>Verwalte Teammitglieder, Ränge, Berechtigungen, Warnungen und Prozesse direkt aus einem modernen Dashboard.</p>
+    </section>
+
+    <section class="dashboard-grid">
+        <article class="info-card">
+            <span class="icon-pill">📊</span>
+            <h3>Teamstatus</h3>
+            <ul class="clean-list">
+                <li>Mitglieder: 24</li>
+                <li>Aktiv im Dienst: 12</li>
+                <li>Supporter: 5</li>
+                <li>Moderator: 3</li>
+                <li>Admin: 2</li>
+                <li>Owner: 1</li>
+            </ul>
+        </article>
+
+        <article class="info-card">
+            <span class="icon-pill">⚠️</span>
+            <h3>Offene Aufgaben</h3>
+            <ul class="clean-list">
+                <li>Reports: 4</li>
+                <li>Tickets: 2</li>
+                <li>Bewerbungen: 3</li>
+                <li>Beschwerden: 1</li>
+            </ul>
+        </article>
+
+        <article class="info-card">
+            <span class="icon-pill">👤</span>
+            <h3>Persönliche Übersicht</h3>
+            <ul class="clean-list">
+                <li>Rang: Teamleiter</li>
+                <li>Dienststunden: 184h</li>
+                <li>Reports bearbeitet: 31</li>
+                <li>Warnungen: 0</li>
+            </ul>
+        </article>
+
+        <article class="info-card">
+            <span class="icon-pill">🛠️</span>
+            <h3>Serverstatus</h3>
+            <ul class="clean-list">
+                <li>Discord: Online</li>
+                <li>Website: Online</li>
+                <li>Datenbank: Online</li>
+                <li>Bot: Online</li>
+            </ul>
+        </article>
+    </section>
+
+    <section class="panel-block">
+        <div class="panel-heading">
+            <div>
+                <p class="eyebrow">Verwaltung</p>
+                <h2>Teammitglieder</h2>
+            </div>
+        </div>
+        <div id="teamMembersList" class="team-members-grid">
+            <div>Mitglieder werden geladen...</div>
+        </div>
+    </section>
+
+    <section class="panel-block">
+        <div class="panel-heading">
+            <div>
+                <p class="eyebrow">Teamwarn-System</p>
+                <h2>Warnung erstellen</h2>
+            </div>
+        </div>
+        <form class="auth-form">
+            <label>
+                Teammitglied
+                <input type="text" placeholder="Name oder Discord-Name">
+            </label>
+            <label>
+                Grund
+                <input type="text" placeholder="z. B. Fehlverhalten">
+            </label>
+            <label>
+                Kategorie
+                <input type="text" placeholder="Inaktivität, Missbrauch, Unfreundlichkeit...">
+            </label>
+            <label>
+                Beweise / Links
+                <input type="text" placeholder="Discord-Link, Screenshot, Dokument">
+            </label>
+            <button class="btn" type="button">Warnung speichern</button>
+        </form>
+    </section>
+
+    <section class="panel-block">
+        <div class="panel-heading">
+            <div>
+                <p class="eyebrow">Rangverwaltung</p>
+                <h2>Ränge & Berechtigungen</h2>
+            </div>
+        </div>
+        <div class="table-list">
+            <div><strong>Owner</strong> · Vollzugriff · Management · Logs · Warnungen</div>
+            <div><strong>Administrator</strong> · Management · Warnungen · Benutzerverwaltung</div>
+            <div><strong>Moderator</strong> · Teamwarnungen vergeben · Support</div>
+        </div>
+    </section>
+</main>
+
+<div id="manageModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-panel">
+        <button id="manageCloseBtn" class="modal-close" type="button">✕</button>
+        <h3 id="manageTitle">Mitglied verwalten</h3>
+        <div id="manageInfo" class="manage-info"></div>
+
+        <label>
+            Aktion
+            <select id="manageAction">
+                <option value="warn">Warn</option>
+                <option value="down-rank">Down-Rank</option>
+                <option value="up-rank">Up-Rank</option>
+                <option value="team-kick">Team-Kick</option>
+            </select>
+        </label>
+
+        <label>
+            Dauer (Warnung)
+            <select id="warnDuration">
+                <option value="1d">1 Tag</option>
+                <option value="3d">3 Tage</option>
+                <option value="7d">7 Tage</option>
+                <option value="14d">14 Tage</option>
+                <option value="30d">30 Tage</option>
+                <option value="60d">60 Tage</option>
+                <option value="perm">Permanent</option>
+            </select>
+        </label>
+
+        <label>
+            Begründung
+            <input id="manageReason" type="text" placeholder="Grund (erforderlich)" required>
+        </label>
+
+        <div class="modal-actions">
+            <button id="manageSubmit" class="btn" type="button">Ausführen</button>
+            <button id="manageCancel" class="btn outline" type="button">Abbrechen</button>
+        </div>
+        <div id="manageResult" class="manage-result"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="team-members-script.js"></script>
+</body>
+</html>

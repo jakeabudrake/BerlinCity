@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logs | Berlin City RP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="brand-mark">BC</span>
+        <span>Berlin City RP</span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#regeln">Regeln</a>
+        <a href="team.html">Team & Management</a>
+    </nav>
+
+    <div class="profile-section" id="profileSection">
+        <button id="discordLoginBtn" class="btn-discord">Mit Discord verbinden</button>
+        <div id="userProfile" class="user-profile hidden">
+            <img id="userAvatar" src="" alt="Avatar" class="avatar">
+            <div class="profile-info">
+                <div id="userName" class="username">Benutzername</div>
+                <div id="userRole" class="user-role">Rolle</div>
+            </div>
+            <button id="profileMenuBtn" class="profile-menu-btn">⋮</button>
+            <div id="profileMenu" class="profile-menu hidden">
+                <button id="logoutBtn" class="menu-item danger">Abmelden</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="team-main">
+    <section class="section">
+        <div class="dashboard-header">
+            <div>
+                <p class="eyebrow">Logs</p>
+                <h1>Team-Logbuch</h1>
+                <p>Alle letzten Log-Einträge werden hier angezeigt.</p>
+            </div>
+        </div>
+
+        <section class="panel-block">
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">Letzte Logs</p>
+                    <h2>Aktuelle Einträge</h2>
+                </div>
+            </div>
+            <div id="logsList" class="table-list">
+                <div>Logs werden geladen...</div>
+            </div>
+        </section>
+
+        <section class="panel-block">
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">Navigation</p>
+                    <h2>Zurück zum Team</h2>
+                </div>
+            </div>
+            <div class="bottom-actions" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                <a class="info-box" href="team.html">Team-Liste</a>
+                <a class="info-box" href="team-regelwerk.html">Team Regelwerk</a>
+                <a class="info-box" href="team-bot.html">Bot-Funktionen</a>
+            </div>
+        </section>
+    </section>
+</main>
+
+<script src="script.js"></script>
+<script src="team-logs-script.js"></script>
+</body>
+</html>

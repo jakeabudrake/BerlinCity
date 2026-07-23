@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot-Funktionen | Berlin City RP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="brand-mark">BC</span>
+        <span>Berlin City RP</span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#regeln">Regeln</a>
+        <a href="team.html">Team & Management</a>
+    </nav>
+
+    <div class="profile-section" id="profileSection">
+        <button id="discordLoginBtn" class="btn-discord">Mit Discord verbinden</button>
+        <div id="userProfile" class="user-profile hidden">
+            <img id="userAvatar" src="" alt="Avatar" class="avatar">
+            <div class="profile-info">
+                <div id="userName" class="username">Benutzername</div>
+                <div id="userRole" class="user-role">Rolle</div>
+            </div>
+            <button id="profileMenuBtn" class="profile-menu-btn">⋮</button>
+            <div id="profileMenu" class="profile-menu hidden">
+                <button id="logoutBtn" class="menu-item danger">Abmelden</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="team-main">
+    <section class="section">
+        <div class="dashboard-header">
+            <div>
+                <p class="eyebrow">Bot-Funktionen</p>
+                <h1>Discord Bot Bedienung</h1>
+                <p>Hier kannst du Bot-Funktionen testen und Serverinfos abrufen.</p>
+            </div>
+        </div>
+
+        <section class="panel-block">
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">Nachricht senden</p>
+                    <h2>Bot-Nachricht an Discord</h2>
+                </div>
+            </div>
+            <form id="discordMessageForm" class="auth-form">
+                <label>
+                    Channel ID
+                    <input type="text" id="discordChannelId" placeholder="z. B. 123456789012345678" required>
+                </label>
+                <label>
+                    Nachricht
+                    <input type="text" id="discordMessageContent" placeholder="Hallo aus der Website" required>
+                </label>
+                <button class="btn" type="submit">Nachricht senden</button>
+            </form>
+        </section>
+
+        <section class="panel-block">
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">Server-Info</p>
+                    <h2>Discord Server prüfen</h2>
+                </div>
+            </div>
+            <form id="discordGuildForm" class="auth-form">
+                <label>
+                    Server ID
+                    <input type="text" id="discordGuildId" value="1519481018221072454" required>
+                </label>
+                <button class="btn" type="submit">Serverinfo laden</button>
+            </form>
+
+            <div id="discordActionStatus" class="message-item" style="margin-top: 18px;">
+                <strong>Warte auf Test...</strong>
+                <small>Hier erscheinen die Antworten des Bots.</small>
+            </div>
+        </section>
+
+        <section class="panel-block">
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">Navigation</p>
+                    <h2>Weitere Team-Seiten</h2>
+                </div>
+            </div>
+            <div class="bottom-actions" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                <a class="info-box" href="team.html">Team-Liste</a>
+                <a class="info-box" href="team-regelwerk.html">Team Regelwerk</a>
+                <a class="info-box" href="team-logs.html">Logs</a>
+            </div>
+        </section>
+    </section>
+</main>
+
+<script src="script.js"></script>
+<script src="team-script.js"></script>
+</body>
+</html>

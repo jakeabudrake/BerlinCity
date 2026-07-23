@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berlin City RP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="authModal" class="auth-modal hidden">
+    <div class="auth-modal-content">
+        <div class="auth-modal-loading">
+            <div class="spinner"></div>
+            <p>Verbinde mit Discord...</p>
+        </div>
+    </div>
+</div>
+
+<div id="serverCheckModal" class="modal hidden">
+    <div class="modal-content">
+        <h2>Server-Beitritt erforderlich</h2>
+        <p>Du musst dem Berlin City RP Discord-Server beitreten, um auf die Website zugreifen zu können.</p>
+        <div class="modal-actions">
+            <a href="https://discord.gg/JE3pd3srNB" target="_blank" class="btn">Server beitreten</a>
+            <a href="https://discord.gg/QzZcAqfpJK" target="_blank" class="btn outline">Appeal Server</a>
+        </div>
+    </div>
+</div>
+
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="brand-mark">BC</span>
+        <span>Berlin City RP</span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="#start">Start</a>
+        <a href="fraktionen.html">Fraktionen</a>
+        <a href="#regeln">Regeln</a>
+        <a href="team.html">Team</a>
+        <a href="team-management.html">Management</a>
+    </nav>
+
+    <div class="profile-section" id="profileSection">
+        <button id="discordLoginBtn" class="btn-discord">Mit Discord verbinden</button>
+        <div id="userProfile" class="user-profile hidden">
+            <img id="userAvatar" src="" alt="Avatar" class="avatar">
+            <div class="profile-info">
+                <div id="userName" class="username">Benutzername</div>
+                <div id="userRole" class="user-role">Rolle</div>
+            </div>
+            <button id="profileMenuBtn" class="profile-menu-btn">⋮</button>
+            <div id="profileMenu" class="profile-menu hidden">
+                <button id="logoutBtn" class="menu-item danger">Abmelden</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="hero" id="start">
+        <div class="hero-copy">
+            <p class="eyebrow">Berlin City RP</p>
+            <h1>Eine Stadt, die sich nach echtem Einsatz anfühlt.</h1>
+            <p>
+                Starte in realistischen Einsätzen, triff ein aktives Team und spiele Polizei,
+                Feuerwehr oder Rettungsdienst mit klaren Regeln und einer Community, die RP ernst nimmt.
+            </p>
+
+            <div class="hero-actions">
+                <a class="btn" href="https://discord.gg/JE3pd3srNB" target="_blank" rel="noopener">Discord beitreten</a>
+                <a class="btn ghost" href="team.html">Team-Bereich</a>
+            </div>
+        </div>
+
+        <aside class="hero-status" aria-label="Server Übersicht">
+            <div>
+                <span>Fokus</span>
+                <strong>Emergency RP</strong>
+            </div>
+            <div>
+                <span>Fraktionen</span>
+                <strong>Polizei · Feuerwehr · RD</strong>
+            </div>
+            <div>
+                <span>Team</span>
+                <strong>Support & Leitung aktiv</strong>
+            </div>
+        </aside>
+    </section>
+
+    <section class="section intro-section">
+        <div class="section-heading">
+            <p class="eyebrow">Warum Berlin City RP?</p>
+            <h2>Kein Chaos-Server, sondern ein Ort für gutes Roleplay.</h2>
+            <p>
+                Wir setzen auf faire Situationen, klare Kommunikation und Einsätze, bei denen jeder
+                eine Rolle hat. Neue Spieler werden nicht allein gelassen, erfahrene Spieler bekommen
+                Raum für starke Szenen.
+            </p>
+        </div>
+
+        <div class="feature-grid">
+            <article class="feature-card">
+                <span class="icon-pill">01</span>
+                <h3>Realistische Einsätze</h3>
+                <p>Von Verkehrskontrollen bis Großlagen: Situationen sollen verständlich, fair und ausspielbar bleiben.</p>
+            </article>
+
+            <article class="feature-card">
+                <span class="icon-pill">02</span>
+                <h3>Klare Regeln</h3>
+                <p>Das Regelwerk ist direkt auf der Website sichtbar, damit alle wissen, woran sie sind.</p>
+            </article>
+
+            <article class="feature-card">
+                <span class="icon-pill">03</span>
+                <h3>Team mit Struktur</h3>
+                <p>Team-Zugänge, Aktive Support und eine Leitung, die Fragen beantwortet.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section departments-section" id="fraktionen">
+        <div class="section-heading">
+            <p class="eyebrow">Fraktionen</p>
+            <h2>Wähle deinen Dienst und bring Berlin in Bewegung.</h2>
+        </div>
+
+        <div class="department-grid">
+            <article class="department-card police">
+                <h3>Polizei</h3>
+                <p>Sichere Einsatzstellen, nimm Anzeigen auf und halte die Stadt unter Kontrolle.</p>
+            </article>
+
+            <article class="department-card fire">
+                <h3>Feuerwehr</h3>
+                <p>Brände, technische Hilfeleistung und Absicherung: schnell, koordiniert, realistisch.</p>
+            </article>
+
+            <article class="department-card rescue">
+                <h3>Rettungsdienst</h3>
+                <p>Versorge Patienten, entscheide ruhig und spiele medizinische Lagen sauber aus.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section team-preview">
+        <div class="section-heading">
+            <p class="eyebrow">Team & Support</p>
+            <h2>Für jeden gibt es die richtige Tür.</h2>
+            <p>
+                Alle Spieler können den Team-Bereich besuchen und wichtige Infos finden. Mit der richtigen Rolle
+                hast du Zugriff auf erweiterte Funktionen und Team-Mitteilungen.
+            </p>
+        </div>
+
+        <div class="split-actions">
+            <a class="portal-card" href="team.html">
+                <span>Team-Bereich</span>
+                <strong>Infos, Support und Community-Updates</strong>
+            </a>
+        </div>
+    </section>
+
+    <section class="section rules-section" id="regeln">
+        <div class="section-heading">
+            <p class="eyebrow">Regelwerk</p>
+            <h2>Damit RP für alle fair bleibt.</h2>
+            <p>Mit dem Beitritt akzeptierst du die Regeln. Nutze gesunden Menschenverstand und bleib respektvoll.</p>
+        </div>
+
+        <div class="rules-layout">
+            <article class="rules-panel">
+                <h3>Discord-Regeln</h3>
+                <ol class="rules-list">
+                    <li><strong>Respektvoll bleiben:</strong> Keine Beleidigungen, Mobbing oder Diskriminierung.</li>
+                    <li><strong>Kein Drama:</strong> Diskussionen sind okay, unnötiges Provozieren nicht.</li>
+                    <li><strong>Spam vermeiden:</strong> Kein Ping-Spam, keine Spam-Nachrichten.</li>
+                    <li><strong>Passende Kanäle nutzen:</strong> Poste deine Nachrichten im richtigen Kanal.</li>
+                    <li><strong>Keine unangemessenen Inhalte:</strong> Gewalt, Pornografie oder Schockinhalte sind verboten.</li>
+                    <li><strong>Werbung nur mit Erlaubnis:</strong> Keine Werbung ohne Zustimmung des Teams.</li>
+                    <li><strong>Privatsphäre respektieren:</strong> Teile keine persönlichen Daten ohne Zustimmung.</li>
+                    <li><strong>Discord-Richtlinien beachten:</strong> Die offiziellen Discord-Regeln gelten ebenfalls.</li>
+                </ol>
+                <div class="consequences">
+                    <h4>Konsequenzen</h4>
+                    <p>Verwarnung, Timeout, Kick, temporärer oder permanenter Bann.</p>
+                </div>
+            </article>
+
+            <article class="rules-panel">
+                <h3>Roleplay-Regeln</h3>
+                <ol class="rules-list">
+                    <li><strong>Realistisches Verhalten:</strong> Spiele so, wie du dich im echten Leben verhalten würdest.</li>
+                    <li><strong>Respektvoller Umgang:</strong> Behandle alle Mitglieder freundlich und fair.</li>
+                    <li><strong>Kein Trolling:</strong> Einsätze dürfen nicht absichtlich gestört werden.</li>
+                    <li><strong>Einsatz-RP ernst nehmen:</strong> Einsatzstellen nicht blockieren.</li>
+                    <li><strong>Fahrzeug-RP:</strong> Fahre realistisch und vermeide absichtliche Unfälle.</li>
+                    <li><strong>Respekt gegenüber Fraktionen:</strong> Sinnvolle Anweisungen befolgen.</li>
+                    <li><strong>Keine Fail-RP Aktionen:</strong> Zerstöre nicht das RP anderer.</li>
+                    <li><strong>Streitigkeiten:</strong> Probleme werden mit dem Team geklärt.</li>
+                </ol>
+                <div class="consequences">
+                    <h4>Mögliche Strafen</h4>
+                    <p>Verwarnung, Kick oder Bann je nach Schwere des Verstoßes.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="discord-band" id="discord">
+        <div>
+            <p class="eyebrow">Community</p>
+            <h2>Komm auf den Discord und starte dein RP.</h2>
+            <p>Regeln lesen, Rolle wählen, Team kontaktieren und loslegen.</p>
+        </div>
+        <a class="btn secondary" href="https://discord.gg/JE3pd3srNB" target="_blank" rel="noopener">Discord öffnen</a>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
